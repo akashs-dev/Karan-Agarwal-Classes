@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon-64.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Karan Agarwal Classes — No.1 Coaching Institute for Std 8th, 9th & 10th (SSC & CBSE) in Pune. Branches at Tingrenagar, Yerwada & Dhanori. Education Brings Freedom." />
+    <meta name="keywords" content="Karan Agarwal Classes, coaching classes Pune, SSC coaching, CBSE coaching, 10th coaching Pune, Tingrenagar, Yerwada, Dhanori" />
+    <meta property="og:title" content="Karan Agarwal Classes — No.1 Coaching Institute Pune" />
+    <meta property="og:description" content="Expert coaching for Std 8th, 9th & 10th — SSC & CBSE boards. From Basics to Board Toppers." />
+    <meta property="og:image" content="/images/logo.png" />
+    <title>Karan Agarwal Classes | No.1 Coaching for 8th, 9th & 10th in Pune</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+    <!-- Preload critical assets to prevent first-paint flicker -->
+    <link rel="preload" href="/images/logo.png" as="image" type="image/png" />
+  </head>
+  <body>
+    <!-- Inline loader: shows before React boots, removed on mount -->
+    <div id="app-loader" style="
+      position:fixed;inset:0;z-index:9999;
+      background:hsl(224,52%,14%);
+      display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;
+    ">
+      <img src="/images/logo.png" alt="KAC" style="width:80px;height:80px;object-fit:contain;border-radius:12px;" />
+      <div style="display:flex;gap:8px;">
+        <span style="width:10px;height:10px;border-radius:50%;background:#eab308;display:inline-block;animation:kac-bounce 1s ease-in-out infinite;"></span>
+        <span style="width:10px;height:10px;border-radius:50%;background:#eab308;display:inline-block;animation:kac-bounce 1s ease-in-out 0.18s infinite;"></span>
+        <span style="width:10px;height:10px;border-radius:50%;background:#eab308;display:inline-block;animation:kac-bounce 1s ease-in-out 0.36s infinite;"></span>
+      </div>
+      <p style="color:rgba(255,255,255,0.5);font-family:Inter,sans-serif;font-size:13px;margin:0;">Karan Agarwal Classes</p>
+    </div>
+    <style>
+      @keyframes kac-bounce {
+        0%,80%,100% { transform:translateY(0); opacity:.6; }
+        40%          { transform:translateY(-10px); opacity:1; }
+      }
+    </style>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
